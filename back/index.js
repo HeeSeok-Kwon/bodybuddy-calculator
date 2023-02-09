@@ -29,8 +29,8 @@ app.get(`/api/result`, (req, res) => {
 app.post(`/api/insert`, (req, res) => {
     const answer = req.body.answer;
 
-    if((requsetNum % 10) === 0) {
-        requsetNum += 1;
+    if(requsetNum >= 9) {
+        requsetNum = 0;
         throw new Error("요청 횟수 에러");
     } else {
         db.query("INSERT INTO cal (answer) VALUES (?);", 
