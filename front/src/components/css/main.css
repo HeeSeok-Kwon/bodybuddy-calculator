@@ -1,0 +1,116 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .cal_wrap {
+    width: 450px;
+    border: 1px solid #f0f0f0;
+}
+
+.main .cal_wrap .cal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 - 제목 */
+.main .cal_wrap .cal .cal_header_sec {
+    background-color: #f52563;
+    text-align: start;
+    padding: 10px 20px;
+}
+
+.main .cal_wrap .cal .cal_header_sec .cal_title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* 메인 */
+.main .cal_wrap .cal .cal_main_sec {
+    height: 650px;
+}
+
+.main .cal_wrap .cal .cal_main_sec .cal_answer_sec {
+    height: 150px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.main .cal_wrap .cal .cal_main_sec .cal_answer_sec .cal_anwser_display {
+    width: 100%;
+    height: 100px;
+    text-align: end;
+    overflow-y: auto;
+    font-size: 28px;
+    word-break: break-all;
+}
+
+.main .cal_wrap .cal .cal_main_sec .cal_btn_sec {
+    height: calc(100% - 150px);
+    background-color: #3a43a5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .cal_wrap .cal .cal_main_sec .cal_btn_sec .cal_btn {
+    width: 112.5px;
+    height: 100px;
+    border: none;
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main .cal_wrap .cal .cal_main_sec .cal_btn_sec .cal_btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* 버튼 커스텀 */
+.empty_space {
+    width: 112.5px;
+    height: 100px;
+    background-color: inherit;
+    border: none;
+}
+
+.bg-common {
+    background-color: inherit;
+}
+
+.bg-common:hover {
+    background-color: #21289a;
+}
+
+.bg-deep {
+    background-color: #22299b;
+}
+
+.bg-deep:hover {
+    background-color: #000066;
+}
+
+.bg-res {
+    background-color: #f52563;
+}
+
+.bg-res:hover {
+    background-color: #f2054d;
+}
+
+/* 계산기 제목 */
+.get-result {
+    text-decoration: none;
+}
+
+.get-result:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+CREATE DATABASE calculator CHARACTER SET UTF8;
+
+use calculator;
+
+CREATE TABLE cal(
+    calculator_id INT PRIMARY KEY AUTO_INCREMENT,
+    answer DOUBLE
+);
